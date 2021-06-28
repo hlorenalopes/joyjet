@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: 400 1rem 'Poppins', sans-serif;
+}
+
+:root {
+  --white: #fff;
+  --background: #f2f2f2;
+  --footer: #908c8c;
+  --footer-line: #f1f1f2;
+  --gray: #9b9b9b;
+  --gray-description: #8c94a8;
+  --blue: #4a90e2;
+  --blue-dark: #3b7adb;
+  --blue-space: #3e4d60;
+}
+
+body {
+  background: var(--background);
+  color: var(--white);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.intro {
+  background: url('./intro.jpg') no-repeat center center;
+  background-size: cover;
+  height: 662px;
+}
+
+.logo {
+  width: 64px;
+}
+
+.header {
+  margin: 0 auto;
+  padding: 30px 135px;
+
+  img {
+    width: 64px;
+  }
+
+  nav {
+    float: right;
+
+    li {
+      display: inline-block;
+    }
+
+    a {
+      display: block;
+      text-transform: uppercase;
+      padding: 20px;
+      text-decoration: none;
+      color: var(--white);
+    }
+    a:hover {
+      color: var(--blue-space);
+    }
+  }
+}
+
+.space {
+  padding-left: 135px;
+  max-width: 46%;
+
+  h1 {
+    font-size: 7.375rem;
+    margin-bottom: -20px;
+    line-height: 0.5pt;
+  }
+
+  span {
+    color: var(--blue-dark);
+    font-size: inherit;
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
+
+  button {
+    margin-top: 37px;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 13px 36px;
+  }
+
+  button:hover {
+    color: var(--white);
+  }
+}
+
+.trending {
+  background: rgba(0, 0, 0, 0.8);
+  height: 142px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: -142px 0 0;
+  padding: 0 135px 0 250px;
+
+  h2 {
+    text-align: right;
+    padding: 0 25px 0 55px;
+    font-size: 1.25rem;
+    margin-bottom: 0;
+
+    div {
+      font-size: inherit;
+      color: var(--blue-dark);
+    }
+  }
+
+  p {
+    padding: 0 25px;
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+}
+
+.trendingLine {
+  border-left: 1px solid var(--white);
+  height: 88px;
+  max-width: 0%;
+  padding: 0;
+}
+
+.stickyBar {
+  background: var(--blue);
+  margin: 0 auto;
+  padding: 16px 135px;
+
+  img {
+    width: 64px;
+  }
+
+  nav {
+    float: right;
+
+    li {
+      display: inline-block;
+    }
+
+    a {
+      display: block;
+      text-transform: uppercase;
+      padding: 20px;
+      text-decoration: none;
+      color: var(--white);
+    }
+    a:hover {
+      color: var(--blue-space);
+    }
+  }
+}
+
+.stickyBarFixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 95.938px;
+  z-index: 1;
+}
+
+.blog {
+  padding: 128px 51.5px 96px;
+  color: var(--blue-space);
+
+  button {
+    border: none;
+    background: inherit;
+
+    img {
+      width: 50px;
+    }
+    img:hover {
+      opacity: 70%;
+    }
+  }
+
+  .cardBox {
+    width: 0;
+    padding: 0 16px;
+
+    .cardImg {
+      height: 309px;
+      width: 368px;
+      background: url('./intro.jpg') no-repeat center center;
+      background-size: cover;
+      border-radius: 5px 5px 0 0;
+    }
+
+    .cardText {
+      width: 368px;
+      background: var(--white);
+      border-radius: 0 0 5px 5px;
+
+      h1 {
+        padding: 20px 20px 0;
+        font-size: 1.25rem;
+      }
+
+      p {
+        padding: 0 20px 16px;
+      }
+    }
+  }
+
+  h1 {
+    font-weight: 500;
+    font-size: 1.25rem;
+  }
+}
+
+.about {
+  color: var(--blue-space);
+  padding: 0 135px;
+
+  div {
+    background: url('./intro.jpg') no-repeat center center;
+    background-size: cover;
+    height: 368px;
+    width: 368px;
+    border-radius: 5px;
+    float: left;
+    margin-right: 32px;
+  }
+
+  h1 {
+    color: var(--blue);
+    text-transform: uppercase;
+    padding-bottom: 16px;
+    font-weight: 400;
+    font-size: 1.625rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+}
+
+footer {
+  padding: 0 135px;
+  color: var(--footer);
+
+  p {
+    font-size: 0.687rem;
+  }
+}
+
+.footerLine {
+  margin: 57px auto 3px;
+  border-top: 1px solid var(--footer-line);
+  width: 1166px;
+}
+
+@media (max-width: 1352px) {
+  .blog {
+    .cardImg {
+      max-width: 330px;
+    }
+
+    .cardText {
+      max-width: 330px;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .blog {
+    .cardImg {
+      max-width: 300px;
+    }
+
+    .cardText {
+      max-width: 300px;
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .trending {
+    padding: 0 85px 0 160px;
+  }
+
+  .blog {
+    .cardImg {
+      max-width: 240px;
+    }
+
+    .cardText {
+      max-width: 240px;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .trending,
+  .trendingLine {
+    visibility: hidden;
+  }
+}
