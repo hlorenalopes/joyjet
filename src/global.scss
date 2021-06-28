@@ -223,7 +223,7 @@ a {
   color: var(--blue-space);
   padding: 0 135px;
 
-  div {
+  .aboutImg {
     background: url('./intro.jpg') no-repeat center center;
     background-size: cover;
     height: 368px;
@@ -272,6 +272,10 @@ footer {
       max-width: 330px;
     }
   }
+
+  .aboutImg {
+    max-width: 330px;
+  }
 }
 
 @media (max-width: 1300px) {
@@ -283,6 +287,10 @@ footer {
     .cardText {
       max-width: 300px;
     }
+  }
+
+  .aboutImg {
+    max-width: 300px;
   }
 }
 
@@ -300,6 +308,9 @@ footer {
       max-width: 290px;
     }
   }
+  .aboutImg {
+    max-width: 290px;
+  }
 }
 
 @media (max-width: 1178px) {
@@ -311,6 +322,9 @@ footer {
     .cardText {
       max-width: 250px;
     }
+  }
+  .aboutImg {
+    max-width: 250px;
   }
 }
 
@@ -326,8 +340,10 @@ footer {
 
   .blog {
     #cardsContainer {
+      display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       margin-left: -368px;
     }
 
@@ -343,21 +359,19 @@ footer {
       visibility: hidden;
     }
   }
-}
 
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {
-  // .blog {
-  //   .cardImg {
-  //     max-width: 220px;
-  //   }
+  .aboutImg {
+    max-width: 368px;
+    margin-bottom: 32px;
+  }
 
-  //   .cardText {
-  //     max-width: 220px;
-  //   }
-  // }
-}
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
+  footer {
+    text-align: center;
+  }
 }
