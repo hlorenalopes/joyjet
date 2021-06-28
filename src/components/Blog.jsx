@@ -3,7 +3,7 @@ import React from 'react';
 function Blog() {
   return (
     <section className='container-fluid blog'>
-      <div className='row'>
+      <div id='cardsContainer' className='row'>
         <button>
           <img src='/arrow-left.svg' alt='Arrow Left' />
         </button>
