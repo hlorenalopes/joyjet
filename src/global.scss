@@ -65,6 +65,10 @@ a {
   }
 }
 
+.dropdownMenu {
+  visibility: hidden;
+}
+
 .space {
   padding-left: 135px;
   max-width: 46%;
@@ -333,8 +337,34 @@ footer {
     height: 520px;
   }
 
+  .menu {
+    visibility: hidden;
+  }
+
+  .header {
+    padding: 30px;
+  }
+
+  .space {
+    padding: 0 30px;
+    max-width: 100%;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0px;
+    }
+
+    button {
+      margin-top: 0;
+    }
+  }
+
   .trending,
   .trendingLine {
+    visibility: hidden;
+  }
+
+  .stickyBar {
     visibility: hidden;
   }
 
@@ -360,15 +390,17 @@ footer {
     }
   }
 
-  .aboutImg {
-    max-width: 368px;
-    margin-bottom: 32px;
-  }
-
   .about {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 35px;
+
+    .aboutImg {
+      max-width: 368px;
+      margin-bottom: 32px;
+      margin-right: 0;
+    }
   }
 
   footer {

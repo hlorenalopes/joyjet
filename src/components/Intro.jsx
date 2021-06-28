@@ -7,7 +7,7 @@ function Intro() {
         <div className='header container-fluid'>
           <img src='/logo.png' alt='Joyjet Logo' />
 
-          <nav>
+          <nav className='menu'>
             <ul>
               <li>
                 <a href='#blog'>Blog</a>
