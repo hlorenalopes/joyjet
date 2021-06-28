@@ -216,6 +216,7 @@ a {
 
     .cardText {
       width: 368px;
+      height: 190px;
       background: var(--white);
       border-radius: 0 0 5px 5px;
 
@@ -411,6 +412,7 @@ footer {
 
     .cardText {
       max-width: 368px;
+      max-height: 150px;
     }
 
     button {
@@ -423,7 +425,7 @@ footer {
       flex-direction: row;
       align-items: center;
       max-width: 30%;
-      margin: 0 auto;
+      margin: 32px auto 0;
 
       .firstCircle {
         background: var(--blue);
