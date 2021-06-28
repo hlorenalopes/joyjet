@@ -196,9 +196,22 @@ a {
     .cardImg {
       height: 309px;
       width: 368px;
-      background: url('./intro.jpg') no-repeat center center;
-      background-size: cover;
       border-radius: 5px 5px 0 0;
+    }
+
+    .cardImg1 {
+      background: url('./img1.jpg') no-repeat center center;
+      background-size: cover;
+    }
+
+    .cardImg2 {
+      background: url('./img2.jpg') no-repeat center center;
+      background-size: cover;
+    }
+
+    .cardImg3 {
+      background: url('./img3.jpg') no-repeat center center;
+      background-size: cover;
     }
 
     .cardText {
@@ -220,6 +233,10 @@ a {
   h1 {
     font-weight: 500;
     font-size: 1.25rem;
+  }
+
+  .circles {
+    visibility: hidden;
   }
 }
 
@@ -334,11 +351,22 @@ footer {
 
 @media (max-width: 991.98px) {
   .intro {
-    height: 520px;
+    height: 420px;
   }
 
   .menu {
-    visibility: hidden;
+    display: none;
+  }
+
+  .dropdownMenu {
+    visibility: visible;
+    float: right;
+
+    div {
+      border-top: 3.2px solid var(--white);
+      width: 32px;
+      padding-bottom: 6px;
+    }
   }
 
   .header {
@@ -361,11 +389,11 @@ footer {
 
   .trending,
   .trendingLine {
-    visibility: hidden;
+    display: none;
   }
 
   .stickyBar {
-    visibility: hidden;
+    display: none;
   }
 
   .blog {
@@ -386,7 +414,28 @@ footer {
     }
 
     button {
-      visibility: hidden;
+      display: none;
+    }
+
+    .circles {
+      visibility: visible;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      max-width: 30%;
+      margin: 0 auto;
+
+      .firstCircle {
+        background: var(--blue);
+      }
+
+      div {
+        height: 16px;
+        width: 16px;
+        border-radius: 100%;
+        background: var(--gray);
+        margin: 0 auto;
+      }
     }
   }
 
@@ -401,6 +450,15 @@ footer {
       margin-bottom: 32px;
       margin-right: 0;
     }
+  }
+
+  .cardBoxHidden {
+    display: none;
+  }
+
+  .cardImg3 {
+    background: url('./img3.jpg') no-repeat center center;
+    background-size: cover;
   }
 
   footer {
